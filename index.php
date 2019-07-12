@@ -1,5 +1,6 @@
 <?php
 
+
     
 
     $signos = []; //criando vetor vazio 
