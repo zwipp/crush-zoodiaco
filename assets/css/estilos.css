@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-position: center center;
+    background-size: 100% auto;
+    height: 300px;
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+header span{
+    font-size: 3rem;
+    color: white;
+}
+
+header a{
+    position: relative;
+    top: 28px;
+}
+
+main{
+    width: 80%;
+    margin: 0 10%;
+    display: grid; /*posicionamento em blocos - colunas*/
+    grid-template-columns: 2fr 2fr; /*2 colunas - vai pegar o tamanho da tela que ele esta soma os 2 fr e divide metade pra cada*/
+    grid-gap: 20px; /*espaçamento entre as colunas*/
+}
+
+#horoscopo{
+    grid-column: span 2; /*ele ira pegar 2 colunas, a dele e a proxima por isso o 2*/
+}
